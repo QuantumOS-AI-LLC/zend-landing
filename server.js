@@ -149,11 +149,15 @@ app.post('/api/leads', async (req, res) => {
   }
 });
 
-// Start listening
-app.listen(PORT, () => {
-  console.log(`\n======================================================`);
-  console.log(`🚀 Zend server is online!`);
-  console.log(`👉 Access public site at: http://localhost:${PORT}`);
-  console.log(`👉 Access dashboard at:   http://localhost:${PORT}/dashboard.html`);
-  console.log(`======================================================\n`);
-});
+// Start listening if run directly (local development)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`\n======================================================`);
+    console.log(`🚀 Zend server is online!`);
+    console.log(`👉 Access public site at: http://localhost:${PORT}`);
+    console.log(`👉 Access dashboard at:   http://localhost:${PORT}/dashboard.html`);
+    console.log(`======================================================\n`);
+  });
+}
+
+module.exports = app;
