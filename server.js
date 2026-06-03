@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080;
 
 // Middleware
 app.use(express.json());
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Endpoint: POST /api/leads (Captures inquiries and pushes to GHL API)
 app.post('/api/leads', async (req, res) => {
