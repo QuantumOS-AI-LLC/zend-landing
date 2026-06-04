@@ -143,17 +143,17 @@ document.addEventListener('DOMContentLoaded', () => {
     competitorBar.setAttribute('width', compBarWidth);
     competitorValText.textContent = formatCurrency(competitorTotalFee, 2);
     // Position text inside the bar or shift if width is too narrow
-    competitorValText.setAttribute('x', 90);
+    competitorValText.setAttribute('x', 150);
     
     zendBar.setAttribute('width', zendBarWidth);
     zendValText.textContent = formatCurrency(zendTotalFee, 2);
     
     // Keep text visible: if bar is too short, display value to the right of the bar
     if (zendBarWidth < 70) {
-      zendValText.setAttribute('x', zendBarWidth + 90);
+      zendValText.setAttribute('x', zendBarWidth + 150);
       zendValText.setAttribute('fill', '#10B981');
     } else {
-      zendValText.setAttribute('x', 90);
+      zendValText.setAttribute('x', 150);
       zendValText.setAttribute('fill', '#FFFFFF');
     }
   }
@@ -265,6 +265,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  document.querySelectorAll(".menu_toggle_btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+          document.body.classList.toggle("show__menu");
+      });
+  });
 
   // Initial Calculation
   calculate();
