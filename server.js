@@ -9,6 +9,13 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Endpoint: GET /api/config (Exposes public configurations like chatbot URL)
+app.get('/api/config', (req, res) => {
+  res.json({
+    chatWebhookUrl: process.env.CHAT_WEBHOOK_URL || ''
+  });
+});
+
 // Endpoint: POST /api/leads (Captures inquiries and pushes to GHL API)
 app.post('/api/leads', async (req, res) => {
   const { name, business, phone, email, volume, ticketSize, savings } = req.body;

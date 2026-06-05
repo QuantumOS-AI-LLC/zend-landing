@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Vanilla CSS Style -->
   <link rel="stylesheet" href="style.css">
+  <!-- n8n Chat Widget CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 </head>
 <body>
   <!-- Header / Navigation -->
@@ -472,5 +474,45 @@
 
   <!-- Calculator Script -->
   <script src="app.js"></script>
+
+  <!-- n8n Chat Widget Script -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    fetch('/api/config')
+      .then(res => res.json())
+      .then(config => {
+        if (config.chatWebhookUrl) {
+          // Retrieve or generate a persistent unique session key for this browser
+          let sessionKey = localStorage.getItem('zend_n8n_session_key');
+          if (!sessionKey) {
+            sessionKey = 'zend_sess_' + Math.random().toString(36).substring(2, 15) + '_' + Date.now();
+            localStorage.setItem('zend_n8n_session_key', sessionKey);
+          }
+
+          createChat({
+            webhookUrl: config.chatWebhookUrl,
+            enableStreaming: true,
+            metadata: {
+              n8nchatui: {
+                sessionKey: sessionKey
+              }
+            },
+            initialMessages: [
+              'Hi there! 👋',
+              'Welcome to Zend Processing. How can we assist you today?'
+            ],
+            i18n: {
+              en: {
+                title: 'Zend Support Assistant 👋',
+                subtitle: "Start a chat. We're here to help you get the best card processing rates.",
+                inputPlaceholder: 'Ask us about rates, hardware, or integration..',
+              }
+            }
+          });
+        }
+      })
+      .catch(err => console.error('Error loading chatbot configuration:', err));
+  </script>
 </body>
 </html>

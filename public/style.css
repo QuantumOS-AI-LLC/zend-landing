@@ -29,6 +29,38 @@
 
   /* Spacing */
   --container-max: 1200px;
+
+  /* n8n Chat Branding Customizations */
+  --chat--color--primary: var(--accent-indigo);
+  --chat--color--primary-shade-50: var(--accent-indigo-hover);
+  --chat--color--primary--shade-100: #4338ca;
+  --chat--color--secondary: var(--accent-emerald);
+  --chat--color-secondary-shade-50: #0d9668;
+  --chat--color-white: #ffffff;
+  --chat--color-light: #0b0f19;
+  --chat--color-light-shade-50: rgba(255, 255, 255, 0.06);
+  --chat--color-light-shade-100: rgba(255, 255, 255, 0.12);
+  --chat--color-medium: #1e293b;
+  --chat--color-dark: #020617;
+  --chat--color-disabled: #334155;
+  --chat--color-typing: #94a3b8;
+  --chat--border-radius: 12px;
+  --chat--font-family: var(--font-body);
+  --chat--window--border: 1px solid rgba(255, 255, 255, 0.08);
+  --chat--window--border-radius: 16px;
+  --chat--body--background: #020617;
+  --chat--footer--background: #0b0f19;
+  --chat--footer--color: #ffffff;
+  --chat--message--bot--background: #0b0f19;
+  --chat--message--bot--color: #ffffff;
+  --chat--message--bot--border: 1px solid rgba(255, 255, 255, 0.06);
+  --chat--message--user--background: var(--accent-indigo);
+  --chat--message--user--color: #ffffff;
+  --chat--input--background: #020617;
+  --chat--input--text-color: #ffffff;
+  --chat--input--send--button--background: #020617;
+  --chat--input--send--button--color: var(--accent-emerald);
+  --chat--input--send--button--color-hover: #10b981;
 }
 
 /* Reset and Base Styles */
