@@ -212,6 +212,18 @@ strong {
   color: #ffffff;
   letter-spacing: 0.1em;
 }
+.logo img{
+  width: 200px;
+}
+
+@media(max-width:575.98px){
+  .logo img {
+  width: 82px;
+  height: 38px;
+  object-fit: cover;
+  object-position: left center;
+}
+}
 
 .zend-logo-icon {
   -webkit-filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.3));
