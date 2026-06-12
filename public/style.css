@@ -208,9 +208,9 @@ strong {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: rgba(2, 6, 23, 0.8);
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  background-color: #ffffff;
+  /* -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px); */
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -300,7 +300,7 @@ strong {
 }
 
 .nav-menu a:hover {
-  color: #ffffff;
+  color: var(--accent-emerald);
 }
 
 .header_menu_btn {
