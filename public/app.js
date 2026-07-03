@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const zendValText = document.getElementById('chart-zend-val');
   
   // Form elements
-  const contactForm = document.getElementById('contact-form');
-  const formSuccessMsg = document.getElementById('form-success-msg');
+  // const contactForm = document.getElementById('contact-form');
+  // const formSuccessMsg = document.getElementById('form-success-msg');
 
   // State variables
   let currentProcessor = 'square'; // default
@@ -203,68 +203,140 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Contact Form Submit Handler
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+  // if (contactForm) {
+  //   contactForm.addEventListener('submit', (e) => {
+  //     e.preventDefault();
       
-      const contactName = document.getElementById('contact-name').value;
-      const businessName = document.getElementById('business-name').value;
-      const phone = document.getElementById('contact-phone').value;
-      const email = document.getElementById('contact-email').value;
+  //     const contactName = document.getElementById('contact-name').value;
+  //     const businessName = document.getElementById('business-name').value;
+  //     const phone = document.getElementById('contact-phone').value;
+  //     const email = document.getElementById('contact-email').value;
       
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalBtnText = submitBtn.textContent;
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Securing Rates...';
+  //     const submitBtn = contactForm.querySelector('button[type="submit"]');
+  //     const originalBtnText = submitBtn.textContent;
+  //     submitBtn.disabled = true;
+  //     submitBtn.textContent = 'Securing Rates...';
 
-      fetch('/api/leads', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: contactName,
-          business: businessName,
-          phone: phone,
-          email: email,
-          volume: parseFloat(volumeSlider.value),
-          ticketSize: parseFloat(ticketSlider.value),
-          savings: currentSavings
-        })
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log('[Lead Captured Server Output]:', data);
+  //     fetch('/api/leads', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       body: JSON.stringify({
+  //         name: contactName,
+  //         business: businessName,
+  //         phone: phone,
+  //         email: email,
+  //         volume: parseFloat(volumeSlider.value),
+  //         ticketSize: parseFloat(ticketSlider.value),
+  //         savings: currentSavings
+  //       })
+  //     })
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       console.log('[Lead Captured Server Output]:', data);
         
-        // Populate success elements
-        document.getElementById('success-biz-name').textContent = businessName;
-        document.getElementById('success-contact-name').textContent = contactName;
-        document.getElementById('success-volume-val').textContent = formatCurrency(parseFloat(volumeSlider.value));
-        document.getElementById('success-ticket-val').textContent = formatCurrency(parseFloat(ticketSlider.value));
-        document.getElementById('success-savings-val').textContent = formatCurrency(currentSavings) + "/mo";
-        document.getElementById('success-phone-val').textContent = phone;
+  //       // Populate success elements
+  //       document.getElementById('success-biz-name').textContent = businessName;
+  //       document.getElementById('success-contact-name').textContent = contactName;
+  //       document.getElementById('success-volume-val').textContent = formatCurrency(parseFloat(volumeSlider.value));
+  //       document.getElementById('success-ticket-val').textContent = formatCurrency(parseFloat(ticketSlider.value));
+  //       document.getElementById('success-savings-val').textContent = formatCurrency(currentSavings) + "/mo";
+  //       document.getElementById('success-phone-val').textContent = phone;
 
-        // Hide form, show custom success message
-        contactForm.classList.add('hidden');
-        formSuccessMsg.classList.remove('hidden');
-      })
-      .catch(err => {
-        console.error('[Lead Submit Error]:', err);
-        // Fallback to show success message for demo/testing
-        document.getElementById('success-biz-name').textContent = businessName;
-        document.getElementById('success-contact-name').textContent = contactName;
-        document.getElementById('success-volume-val').textContent = formatCurrency(parseFloat(volumeSlider.value));
-        document.getElementById('success-ticket-val').textContent = formatCurrency(parseFloat(ticketSlider.value));
-        document.getElementById('success-savings-val').textContent = formatCurrency(currentSavings) + "/mo";
-        document.getElementById('success-phone-val').textContent = phone;
+  //       // Hide form, show custom success message
+  //       contactForm.classList.add('hidden');
+  //       formSuccessMsg.classList.remove('hidden');
+  //     })
+  //     .catch(err => {
+  //       console.error('[Lead Submit Error]:', err);
+  //       // Fallback to show success message for demo/testing
+  //       document.getElementById('success-biz-name').textContent = businessName;
+  //       document.getElementById('success-contact-name').textContent = contactName;
+  //       document.getElementById('success-volume-val').textContent = formatCurrency(parseFloat(volumeSlider.value));
+  //       document.getElementById('success-ticket-val').textContent = formatCurrency(parseFloat(ticketSlider.value));
+  //       document.getElementById('success-savings-val').textContent = formatCurrency(currentSavings) + "/mo";
+  //       document.getElementById('success-phone-val').textContent = phone;
 
-        contactForm.classList.add('hidden');
-        formSuccessMsg.classList.remove('hidden');
-      })
-      .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalBtnText;
+  //       contactForm.classList.add('hidden');
+  //       formSuccessMsg.classList.remove('hidden');
+  //     })
+  //     .finally(() => {
+  //       submitBtn.disabled = false;
+  //       submitBtn.textContent = originalBtnText;
+  //     });
+  //   });
+  // }
+
+
+  document.querySelectorAll(".contact-form").forEach((contactForm) => {
+
+    contactForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const wrapper = contactForm.closest(".form-max-width");
+
+        const contactName = contactForm.querySelector(".contact-name").value;
+        const businessName = contactForm.querySelector(".business-name").value;
+        const phone = contactForm.querySelector(".contact-phone").value;
+        const email = contactForm.querySelector(".contact-email").value;
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.textContent;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Securing Rates...";
+
+        fetch("/api/leads", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                name: contactName,
+                business: businessName,
+                phone: phone,
+                email: email,
+                volume: parseFloat(volumeSlider.value),
+                ticketSize: parseFloat(ticketSlider.value),
+                savings: currentSavings
+            })
+        })
+        .then(res => res.json())
+        .then(() => {
+
+            showSuccess();
+
+        })
+        .catch(err => {
+
+            console.error(err);
+
+            // Demo fallback
+            showSuccess();
+
+        })
+        .finally(() => {
+
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+
+        });
+
+        function showSuccess() {
+
+            wrapper.querySelector(".success-biz-name").textContent = businessName;
+            wrapper.querySelector(".success-contact-name").textContent = contactName;
+            wrapper.querySelector(".success-volume-val").textContent = formatCurrency(parseFloat(volumeSlider.value));
+            wrapper.querySelector(".success-ticket-val").textContent = formatCurrency(parseFloat(ticketSlider.value));
+            wrapper.querySelector(".success-savings-val").textContent = formatCurrency(currentSavings) + "/mo";
+            wrapper.querySelector(".success-phone-val").textContent = phone;
+
+            contactForm.classList.add("hidden");
+            wrapper.querySelector(".form-success").classList.remove("hidden");
+
+        }
       });
-    });
-  }
+  });
 
   document.querySelectorAll(".menu_toggle_btn").forEach((btn) => {
       btn.addEventListener("click", () => {
