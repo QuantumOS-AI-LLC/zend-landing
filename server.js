@@ -1,6 +1,10 @@
 const express = require('express');
 const path = require('path');
-require('dotenv').config();
+try {
+  require('dotenv').config();
+} catch (e) {
+  // Ignore error in serverless environments where environment variables are injected directly
+}
 
 const app = express();
 const PORT = process.env.PORT || 8080;
