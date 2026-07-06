@@ -32,6 +32,28 @@ app.post('/api/leads', async (req, res) => {
     });
   }
 
+  // Forward to leads webhook if configured (e.g. n8n workflow)
+  const leadsWebhookUrl = process.env.LEADS_WEBHOOK_URL;
+  if (leadsWebhookUrl && leadsWebhookUrl.trim() !== '') {
+    try {
+      console.log(`[Webhook] Forwarding lead to ${leadsWebhookUrl}...`);
+      const response = await fetch(leadsWebhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          event: 'lead_captured',
+          timestamp: new Date().toISOString(),
+          lead: { name, business, phone, email, volume, ticketSize, savings }
+        })
+      });
+      console.log(`[Webhook] Forwarded successfully. Status: ${response.status}`);
+    } catch (error) {
+      console.error('[Webhook Error] Failed to forward lead:', error.message);
+    }
+  }
+
   const ghlApiKey = process.env.GHL_API_KEY;
   const ghlLocationId = process.env.GHL_LOCATION_ID;
 
