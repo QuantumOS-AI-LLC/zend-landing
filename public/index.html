@@ -1,234 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zend Processing — High Performance Card Processing for Small Businesses</title>
-  <!-- Google Fonts: Outfit (for headlines) and Plus Jakarta Sans (for body/UI) -->
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Vanilla CSS Style -->
-  <link rel="stylesheet" href="style.css">
-  <!-- n8n Chat Widget CSS -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zend.blue — Wholesale Card Processing for Phoenix Businesses</title>
+<meta name="description" content="Stop paying retail to accept cards. Zend.blue gives Phoenix businesses wholesale card processing and turns the savings into automation that runs your business.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- n8n Chat Widget CSS -->
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header class="main-header header">
-    <div class="header-container">
-      <a href="/" class="logo">
+
+<!-- NAV -->
+<nav>
+  <div class="nav-in">
+    <a href="/" class="logo">
         <img src="logo.png" alt="Zend Blue">
       </a>
-      <nav class="header_menu nav-menu">
-        <button class="header_menu_btn menu_toggle_btn">
-          <svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#ffffff"></path> </g></svg>
-        </button>
-        <a href="#calculator">Savings Calculator</a>
-        <a href="#benefits">Technology</a>
-        <a href="#crm">CRM Add-on</a>
-        <!-- <a href="dashboard.html" style="color: var(--accent-emerald);">Merchant Portal</a> -->
-      </nav>
-      <div class="header-actions">
-        <a href="#lead-section" class="btn btn-secondary">Get Started</a>
+    <!-- <div class="logo">zend<span class="dot">.</span>blue</div> -->
+    <div class="nav-links">
+      <a href="#calculator">Rate Calculator</a>
+      <a href="#cards">Good vs. Bad Cards</a>
+      <a href="#suite">Automation Suite</a>
+      <a href="#glossary">Plain Terms</a>
+      <a href="#calculator" class="nav-cta">See Your Real Rate</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker" style="color:var(--teal)">Wholesale Card Processing · Phoenix, AZ</div>
+      <h1>Stop paying <span class="strike">retail</span> to accept cards<span class="teal">.</span></h1>
+      <p class="hero-sub">Most Phoenix businesses are on Square or Stripe rates built for hobbyists, not real businesses. Zend.blue gives you wholesale processing — the same rate the banks give us — and hands you the difference.</p>
+      <a href="#calculator" class="btn btn-primary">See Your Real Rate →</a>
+      <div class="hero-micro">Takes 60 seconds. No statement upload required to get a ballpark.</div>
+    </div>
+    <div class="ticket" aria-label="Example: not all cards cost the same to accept">
+      <div class="ticket-label">What each card really costs you</div>
+      <div class="ticket-row">
+        <span class="ticket-name">Debit card <span class="ticket-tag tag-good">good</span></span>
+        <span class="ticket-rate good">~0.8%</span>
       </div>
-      <button class="header_menu_btn menu_toggle_btn">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+      <div class="ticket-row">
+        <span class="ticket-name">Basic credit <span class="ticket-tag tag-good">good</span></span>
+        <span class="ticket-rate good">~1.6%</span>
+      </div>
+      <div class="ticket-row">
+        <span class="ticket-name">Premium rewards <span class="ticket-tag tag-bad">bad</span></span>
+        <span class="ticket-rate bad">~2.7%</span>
+      </div>
+      <div class="ticket-row">
+        <span class="ticket-name">Corporate / cashback <span class="ticket-tag tag-bad">bad</span></span>
+        <span class="ticket-rate bad">~3.3%</span>
+      </div>
+      <div class="ticket-foot">Flat-rate processors blend all of these into one number so you never see the spread. We show you every line. <span class="mono" style="font-size:11px">Rates illustrative — varies by card &amp; network.</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="lead-section" id="lead-section">
+  <div class="lead-glow"></div>
+
+  <div class="container form-max-width">
+    <div class="section-header text-center">
+      <h2 class="section-title">Start Keeping Your Revenue</h2>
+      <p class="section-subtitle">
+        Enter your contact info below. Our team will review your average
+        transaction types and help you transition seamlessly to Zend rates.
+      </p>
+    </div>
+
+    <form class="contact-form zend-form">
+
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" class="contact-name" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Business Name</label>
+          <input type="text" class="business-name" placeholder="Business Name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" class="contact-phone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" class="contact-email" placeholder="Email Address" required>
+        </div>
+
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">
+        Secure My Custom Rates
       </button>
-    </div>
-  </header>
-  <div id="backdrop" class="menu_toggle_btn"></div>
-  <!-- Top Promo Section (Wholesale Rate) -->
-  <section class="top-promo-section">
-    <div class="top-promo-glow"></div>
-    <div class="container promo-grid">
-      <div class="promo-content">
-        <div class="badge-accent">EXCLUSIVE WHOLESALE RATE</div>
-        <h1 class="promo-title">
-          Wholesale Card Processing at <span class="highlight-emerald">1.25%</span>
-        </h1>
-        <p class="promo-subtitle">
-          Direct wholesale interchange access. Keep 98.75% of every transaction. Built for scaling businesses that are tired of paying inflated processor markups. Next-day payouts included.
-        </p>
-        <div class="promo-actions">
-          <a href="#calculator" class="btn btn-secondary">Lock In Your Rate</a>
-          <a href="sms:+15809109100" class="btn btn-outline">Text Now to Get Started</a>
-        </div>
-      </div>
-      <div class="promo-media">
-        <div class="media-glow-violet"></div>
-        <div class="image-wrapper-glow">
-          <img src="assets/excited_owner.png" alt="Excited Business Owner Saving with Zend" class="excited-owner-img">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="lead-section" id="lead-section">
-    <div class="lead-glow"></div>
+    </form>
 
-    <div class="container form-max-width">
-      <div class="section-header text-center">
-        <h2 class="section-title">Start Keeping Your Revenue</h2>
-        <p class="section-subtitle">
-          Enter your contact info below. Our team will review your average
-          transaction types and help you transition seamlessly to Zend rates.
-        </p>
-      </div>
+    <div class="form-success hidden">
 
-      <form class="contact-form zend-form">
+      <div class="success-icon">✓</div>
 
-        <div class="form-grid">
+      <h3>
+        Analysis Requested for
+        <span class="success-biz-name text-emerald-400">Your Business</span>!
+      </h3>
 
-          <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" class="contact-name" placeholder="Full Name" required>
-          </div>
+      <p>
+        Thanks
+        <span class="success-contact-name" style="color:#fff;font-weight:700;"></span>!
 
-          <div class="form-group">
-            <label>Business Name</label>
-            <input type="text" class="business-name" placeholder="Business Name" required>
-          </div>
+        We have captured your processing profile:
 
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" class="contact-phone" placeholder="Phone Number" required>
-          </div>
+        <strong>
+          <span class="success-volume-val"></span>/mo
+        </strong>
 
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" class="contact-email" placeholder="Email Address" required>
-          </div>
+        volume at an average ticket size of
 
-        </div>
+        <strong>
+          <span class="success-ticket-val"></span>
+        </strong>.
+      </p>
 
-        <button type="submit" class="btn btn-primary btn-block">
-          Secure My Custom Rates
-        </button>
+      <p style="margin-top:16px;">
 
-      </form>
+        Our team is preparing your custom rate quote to secure your estimated monthly savings of
 
-      <div class="form-success hidden">
+        <strong>
+          <span class="success-savings-val text-emerald-400"></span>
+        </strong>.
 
-        <div class="success-icon">✓</div>
+        We'll text or call you at
 
-        <h3>
-          Analysis Requested for
-          <span class="success-biz-name text-emerald-400">Your Business</span>!
-        </h3>
+        <span class="success-phone-val" style="color:#fff;font-weight:700;"></span>
 
-        <p>
-          Thanks
-          <span class="success-contact-name" style="color:#fff;font-weight:700;"></span>!
+        within 1 business day.
 
-          We have captured your processing profile:
-
-          <strong>
-            <span class="success-volume-val"></span>/mo
-          </strong>
-
-          volume at an average ticket size of
-
-          <strong>
-            <span class="success-ticket-val"></span>
-          </strong>.
-        </p>
-
-        <p style="margin-top:16px;">
-
-          Our team is preparing your custom rate quote to secure your estimated monthly savings of
-
-          <strong>
-            <span class="success-savings-val text-emerald-400"></span>
-          </strong>.
-
-          We'll text or call you at
-
-          <span class="success-phone-val" style="color:#fff;font-weight:700;"></span>
-
-          within 1 business day.
-
-        </p>
-
-      </div>
+      </p>
 
     </div>
-  </section>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-glow"></div>
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="badge-new">NATIONWIDE CARD PROCESSING</div>
-        <h1 class="hero-title">
-          Stop Giving <span class="highlight-orange">3%</span> of Your Hard-Earned Revenue Away.
-        </h1>
-        <p class="hero-subtitle">
-          Square and Stripe charge a flat 2.9%+. Switch to <strong>Zend</strong> and capture our ultra-low debit rate of <strong>1.25% + 25¢</strong>. Built for local small businesses.
-        </p>
-        <div class="hero-actions">
-          <a href="#calculator" class="btn btn-primary">Calculate Your Savings</a>
-          <a href="sms:+15809109100" class="btn btn-outline">Text Now to Get Started</a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat-card">
-            <span class="stat-num">1.25%</span>
-            <span class="stat-label">Debit Rate</span>
-          </div>
-          <div class="hero-stat-card">
-            <span class="stat-num">Next-Day</span>
-            <span class="stat-label">Payouts</span>
-          </div>
-          <div class="hero-stat-card">
-            <span class="stat-num">85%</span>
-            <span class="stat-label">Avg Debit Share</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-media">
-        <div class="media-glow"></div>
-        <div class="media-container">
-          <img src="assets/dashboard_mockup.png" alt="Zend Realtime P&L Dashboard" id="hero-dashboard-img" class="floating-dashboard">
-          <div class="media-overlay-card">
-            <div class="overlay-icon">💰</div>
-            <div>
-              <h4>Next-Day Payout Enabled</h4>
-              <p>Settled in bank by 6:00 AM</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Trust Logos Banner -->
-    <div class="container trust-logos-row">
-      <span class="trust-label">Zend Replaces Legacy Payment Gateways:</span>
-      <div class="trust-logos-grid">
-        <div class="trust-logo-item">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M3 3h18v18H3V3zm3 3v12h12V6H6zm3 3h6v6H9V9z"/></svg>
-          <span>Square</span>
-        </div>
-        <div class="trust-logo-item">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M13.92 10.74c0-1.18-.94-1.63-2.52-1.63-2.07 0-4.04.66-4.04.66L6.75 6.06s2.32-.98 5.16-.98c3.96 0 6.64 1.83 6.64 5.7 0 5.43-7.42 6.13-7.42 7.78 0 .68.61.99 1.62.99 2.22 0 4.67-.93 4.67-.93l.6 3.73s-2.22.99-5.3.99c-4.22 0-6.88-1.92-6.88-5.83 0-5.74 7.68-6.19 7.68-7.77z"/></svg>
-          <span>Stripe</span>
-        </div>
-        <div class="trust-logo-item">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-          <span>Clover</span>
-        </div>
-        <div class="trust-logo-item">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.06 7.42c-.22-2.18-1.64-3.79-3.93-4.23-1.07-.21-2.47-.21-3.95-.21H6.1c-.56 0-1.03.42-1.09.98L2.09 21.05c-.06.56.37 1.05.94 1.05h4.63l1.19-7.53.07-.46h3.69c3.34 0 5.86-1.57 6.62-5.46.36-1.85.25-3.8-.97-5.23z"/></svg>
-          <span>PayPal</span>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  
-
-  <!-- Interactive Calculator Section -->
+<!-- Interactive Calculator Section -->
   <section id="calculator" class="calculator-section">
     <div class="container">
       <div class="section-header text-center">
@@ -389,56 +316,232 @@
     </div>
   </section>
 
-  <!-- Core Benefits / Technology Section -->
-  <section id="benefits" class="benefits-section">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="section-title">State-of-the-Art Processing Technology</h2>
-        <p class="section-subtitle">We don't just save you thousands on rates. We give you tools that speed up your business operations and cash flow.</p>
+<!-- CALCULATOR -->
+<section class="calc-sec" id="calculator">
+  <div class="wrap">
+    <div class="kicker">Step 1 · Calculate</div>
+    <h2 class="sec-title">What are you actually paying?</h2>
+    <p class="sec-lede">Square and Stripe post one flat number and call it simple. It's not — it's a markup. Enter your average monthly volume and we'll show you your blended effective rate and what wholesale would cost instead.</p>
+
+    <div class="calc-grid">
+      <div class="calc-card">
+        <div class="field">
+          <label for="vol">Monthly card volume <span class="hint">total $ you run through cards</span></label>
+          <input type="text" id="vol" inputmode="numeric" placeholder="$25,000">
+        </div>
+        <div class="field">
+          <label for="proc">Current processor</label>
+          <select id="proc">
+            <option value="square">Square</option>
+            <option value="stripe">Stripe</option>
+            <option value="other">Other / not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="rate">Current rate % <span class="hint">optional — leave blank and we'll use published defaults</span></label>
+          <input type="text" id="rate" inputmode="decimal" placeholder="e.g. 2.9">
+        </div>
+        <button class="btn btn-primary calc-btn" id="calcBtn">Show My Numbers</button>
       </div>
 
-      <div class="benefits-grid">
-        <!-- Card 1 -->
-        <div class="benefit-card">
-          <div class="benefit-icon-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="benefit-icon">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-          </div>
-          <h3>Next-Day Payouts</h3>
-          <p>Stop waiting 3-5 days for your credit card batches to settle. Zend features industry-leading speed: transactions settle into your bank account the very next morning by 6:00 AM.</p>
-        </div>
+      <div class="result" id="resultBox" aria-live="polite">
+        <h3>Your ballpark, in dollars</h3>
+        <div class="res-row"><span class="lbl">You're paying approximately</span><span class="val mono" id="outCurrent">—</span></div>
+        <div class="res-row"><span class="lbl">On wholesale, that's closer to</span><span class="val mono" id="outWholesale">—</span></div>
+        <div class="res-row save"><span class="lbl">Estimated savings</span><span class="val mono" id="outSavings">—</span></div>
+        <div class="res-fund" id="outFund">That's enough to fund the <strong>full Zend Automation Suite</strong> ($250/mo market value) — with money left in your pocket.</div>
+        <p class="res-note">Estimates based on published flat rates and typical wholesale card mix. Your exact number depends on card mix, volume, and business type — a free statement review pins it down precisely.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Card 2 -->
-        <div class="benefit-card">
-          <div class="benefit-icon-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="benefit-icon">
-              <line x1="18" y1="20" x2="18" y2="10"></line>
-              <line x1="12" y1="20" x2="12" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="14"></line>
-            </svg>
-          </div>
-          <h3>Real-Time P&L Dashboard</h3>
-          <p>Get a bird's-eye view of your business health. Our portal logs every payment instantly and computes a real-time Profit and Loss statement, tracking raw volume, processing costs, and true net margins.</p>
-        </div>
+<!-- GOOD / BAD CARDS -->
+<section class="cards-sec" id="cards">
+  <div class="wrap">
+    <div class="kicker">Step 2 · Educate</div>
+    <h2 class="sec-title">Not all cards cost the same</h2>
+    <p class="sec-lede">A debit card costs almost nothing to accept. A premium rewards or cashback card can cost you 3–4x more — because the bank is funding that cardholder's rewards out of <em>your</em> margin. Most processors blend all of this into one flat rate so you never see it. We don't.</p>
 
-        <!-- Card 3 -->
-        <div class="benefit-card">
-          <div class="benefit-icon-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="benefit-icon">
-              <rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="2" y1="10" x2="22" y2="10"></line>
-            </svg>
-          </div>
-          <h3>Modern Hardware & Tap-to-Pay</h3>
-          <p>Equip your store or mobile teams with sleek, smart terminals. Accept chip cards, Apple Pay, Google Pay, and contactless tap payments. Everything syncs to a single unified digital ledger.</p>
+    <div class="card-split">
+      <div class="card-panel good">
+        <h3>Good cards</h3>
+        <div class="sub">Low interchange · processed at wholesale, averaging around 1.5%</div>
+        <div class="bar-row">
+          <div class="bar-top"><span class="n">Debit</span><span class="r">~0.8%</span></div>
+          <div class="bar"><i style="width:24%"></i></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-top"><span class="n">Basic credit</span><span class="r">~1.6%</span></div>
+          <div class="bar"><i style="width:48%"></i></div>
+        </div>
+        <div class="takeaway">These are most of your everyday transactions — and on a flat rate, you're overpaying on every single one of them.</div>
+      </div>
+      <div class="card-panel bad">
+        <h3>Bad cards</h3>
+        <div class="sub">Higher interchange by design — the rewards come out of your margin</div>
+        <div class="bar-row">
+          <div class="bar-top"><span class="n">Premium rewards</span><span class="r">~2.7%</span></div>
+          <div class="bar"><i style="width:81%"></i></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-top"><span class="n">Corporate / purchasing / cashback</span><span class="r">~3.3%</span></div>
+          <div class="bar"><i style="width:99%"></i></div>
+        </div>
+        <div class="takeaway">Our system flags these automatically, so you understand exactly where your cost is coming from — transaction by transaction.</div>
+      </div>
+    </div>
+
+    <div class="transparency">
+      The result: <strong>transparency most processors don't want you to have</strong> — because seeing the spread is the thing that lets you see the markup.
+    </div>
+  </div>
+</section>
+
+<!-- YOUR ZEND RATE -->
+<section class="rate-sec">
+  <div class="wrap rate-grid">
+    <div>
+      <div class="kicker">Your Zend Rate</div>
+      <h2 class="sec-title">Wholesale in, wholesale out.</h2>
+      <p style="font-size:17px;margin-bottom:8px">We built relationships with the banks that actually set these rates — 12 of them — so we can route your good cards at close to cost.</p>
+      <ul class="no-list">
+        <li>No inflated flat rate</li>
+        <li>No tiers that quietly downgrade your best transactions</li>
+        <li class="yes">Just your real cost, plus one transparent margin</li>
+      </ul>
+    </div>
+    <div class="rate-visual">
+      <div class="pipe">
+        <div class="pipe-node">
+          <div class="pipe-dot a">01</div>
+          <div><div class="t">Card networks set interchange</div><div class="d">Visa, Mastercard &amp; the banks — the true wholesale cost</div></div>
+        </div>
+        <div class="pipe-line"></div>
+        <div class="pipe-node">
+          <div class="pipe-dot b">02</div>
+          <div><div class="t">Zend routes at close to cost</div><div class="d">Direct bank relationships, one transparent margin</div></div>
+        </div>
+        <div class="pipe-line"></div>
+        <div class="pipe-node">
+          <div class="pipe-dot c">03</div>
+          <div><div class="t">You keep the difference</div><div class="d">The spread flat-rate processors were pocketing</div></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CRM Add-on Section -->
+<!-- TURN SAVINGS INTO GROWTH -->
+<section class="growth-sec" id="suite">
+  <div class="wrap">
+    <div class="kicker">Step 3 · Convert the savings</div>
+    <h2 class="sec-title">Your savings don't just sit there.</h2>
+    <p class="sec-lede">Most merchants save money on processing and never notice — it just disappears into a lower statement. Zend.blue is built differently: the savings we find fund the tools that grow your business.</p>
+
+    <div class="suite">
+      <div class="suite-card">
+        <div class="ic">💬</div>
+        <h4>AI Communicator</h4>
+        <p>AI-powered lead follow-up. Texts go out the moment someone reaches out — every lead answered, none forgotten.</p>
+      </div>
+      <div class="suite-card">
+        <div class="ic">🧠</div>
+        <h4>Operational Brain</h4>
+        <p>A CRM that tracks every customer, job, and appointment automatically — instead of living in your head or a notebook.</p>
+      </div>
+      <div class="suite-card">
+        <div class="ic">⚡</div>
+        <h4>Frictionless Billing</h4>
+        <p>Automated invoicing, reminders, and reconciliation. Money in, books straight, no Sunday-night chores.</p>
+      </div>
+    </div>
+
+    <div class="price-strip">
+      <span class="was mono">$250/mo</span>
+      <span class="arrow">→</span>
+      <span class="now">Effectively $0</span>
+      <span class="exp">The kind of system an agency would charge you $250/month for — funded by money you were already leaving on the table.</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT THIS LOOKS LIKE -->
+<section class="looks-sec">
+  <div class="wrap">
+    <div class="kicker">In practice</div>
+    <h2 class="sec-title">Fortune 500 tools. Small business price.<br>(Funded by your own savings.)</h2>
+    <p class="sec-lede">Big companies automate everything — not because they're smarter than you, but because they can afford the tools. Zend.blue closes that gap. The savings we find in your processing pay for the same class of system, sized to your business:</p>
+
+    <div class="looks-grid">
+      <div class="look">
+        <div class="n">01</div>
+        <div><h4>Every lead gets followed up automatically</h4><p>No more "I meant to call them back." Texts go out the moment someone reaches out, and nobody falls through the cracks.</p></div>
+      </div>
+      <div class="look">
+        <div class="n">02</div>
+        <div><h4>Your team knows what's happening — without you tracking it by hand</h4><p>Jobs, appointments, and orders move through a system automatically instead of living in your head or a notebook.</p></div>
+      </div>
+      <div class="look">
+        <div class="n">03</div>
+        <div><h4>Your customers hear from you without you writing it every time</h4><p>Reminders, confirmations, and review requests go out on their own.</p></div>
+      </div>
+      <div class="look">
+        <div class="n">04</div>
+        <div><h4>Payroll and hours stop being a Sunday-night chore</h4><p>Time gets logged and totaled automatically instead of chased down at the end of the week.</p></div>
+      </div>
+      <div class="look">
+        <div class="n">05</div>
+        <div><h4>You see your numbers in real time</h4><p>Revenue, costs, and margin in one place — not something your bookkeeper hands you a month later.</p></div>
+      </div>
+      <div class="look">
+        <div class="n">→</div>
+        <div><h4 style="font-size:18px">None of this is a separate expense.</h4><p style="font-size:15px">It's built to run on the money you're already overpaying to process cards — you just haven't seen it yet because it's been hiding inside a markup. We show you the number, then show you what it can build.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOSSARY -->
+<section class="gloss-sec" id="glossary">
+  <div class="wrap">
+    <div class="kicker">Terms, plainly</div>
+    <h2 class="sec-title">The four words that explain your statement</h2>
+    <dl class="gloss">
+      <div class="g">
+        <dt>Wholesale rate</dt>
+        <dd>The actual cost the bank charges to move money, before any markup.</dd>
+      </div>
+      <div class="g">
+        <dt>Effective rate</dt>
+        <dd>Your total processing cost divided by your total volume — the real number, not the advertised one.</dd>
+      </div>
+      <div class="g">
+        <dt>Interchange</dt>
+        <dd>The fee set by Visa/Mastercard/etc. per card type. This is what makes "good" and "bad" cards cost differently.</dd>
+      </div>
+      <div class="g">
+        <dt>Blended rate</dt>
+        <dd>What Square and Stripe charge: one number covering all card types, so the spread is hidden inside it.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-sec">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Find out what wholesale would save you.</h2>
+      <p>Get a free, no-obligation Zend rate review. We'll compare your current statement against wholesale tiers and show you the difference — in dollars.</p>
+      <a href="#calculator" class="btn">See Your Real Rate →</a>
+      <div class="cta-note">Free statement review · No long-term lock-in to start the conversation</div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- CRM Add-on Section -->
   <section id="crm" class="crm-section">
     <div class="container crm-grid">
       <div class="crm-content">
@@ -504,46 +607,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Lead Form / Contact Section -->
-  <!-- <section id="lead-form" class="lead-section">
-    <div class="lead-glow"></div>
-    <div class="container form-max-width">
-      <div class="section-header text-center">
-        <h2 class="section-title">Start Keeping Your Revenue</h2>
-        <p class="section-subtitle">Enter your contact info below. Our team will review your average transaction types and help you transition seamlessly to Zend rates.</p>
-      </div>
-
-      <form id="contact-form" class="zend-form">
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="contact-name">Full Name</label>
-            <input type="text" id="contact-name" placeholder="Full Name" required>
-          </div>
-          <div class="form-group">
-            <label for="business-name">Business Name</label>
-            <input type="text" id="business-name" placeholder="Business Name" required>
-          </div>
-          <div class="form-group">
-            <label for="contact-phone">Phone Number</label>
-            <input type="tel" id="contact-phone" placeholder="Phone Number" required>
-          </div>
-          <div class="form-group">
-            <label for="contact-email">Email Address</label>
-            <input type="email" id="contact-email" placeholder="Email Address" required>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Secure My Custom Rates</button>
-      </form>
-      
-      <div id="form-success-msg" class="form-success hidden">
-        <div class="success-icon">✓</div>
-        <h3>Analysis Requested for <span id="success-biz-name" class="text-emerald-400">Your Business</span>!</h3>
-        <p>Thanks <span id="success-contact-name" style="color: #ffffff; font-weight: 700;"></span>! We have captured your processing profile: <strong><span id="success-volume-val"></span>/mo</strong> volume at an average ticket size of <strong><span id="success-ticket-val"></span></strong>.</p>
-        <p class="mt-16" style="margin-top: 16px;">Our team is preparing your custom rate quote to secure your estimated monthly savings of <strong><span id="success-savings-val" class="text-emerald-400"></span></strong>. We'll text or call you at <span id="success-phone-val" style="color: #ffffff; font-weight: 700;"></span> within 1 business day.</p>
-      </div>
-    </div>
-  </section> -->
 
   <section class="lead-section">
     <div class="lead-glow"></div>
@@ -635,28 +698,32 @@
 
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container footer-content text-center">
-      <div class="footer-logo">
-        <svg class="zend-logo-icon" width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block; vertical-align:middle; margin-right:6px;">
-          <path d="M25 20H75L35 80H75" stroke="url(#logo-grad-footer)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-          <defs>
-            <linearGradient id="logo-grad-footer" x1="25" y1="20" x2="75" y2="80">
-              <stop offset="0%" stop-color="#6366F1" />
-              <stop offset="100%" stop-color="#10B981" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <span class="logo-text" style="vertical-align:middle; font-weight:800; font-family:var(--font-headline);">ZEND</span>
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo">
+        <img src="logo.png" alt="Zend Blue">
+      </a>
+        <!-- <div class="foot-logo">zend<span class="dot">.</span>blue</div> -->
+        <div style="margin-top:8px">Wholesale card transaction fees · Business-friendly fintech · Phoenix, AZ</div>
       </div>
-      <p class="footer-disclosure">Zend Processing Services is a registered Independent Sales Organization (ISO) of merchant acquirers. Custom interchange rates, brand fees, and local in-person merchant agreements may affect your final blended processing rates. Savings figures are estimates based on standard merchant card mix distributions.</p>
-      <p class="copyright">&copy; 2026 Zend Processing LLC. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="#calculator">Rate Calculator</a>
+        <a href="#cards">Card Education</a>
+        <a href="#suite">Automation Suite</a>
+        <a href="#glossary">Glossary</a>
+      </div>
     </div>
-  </footer>
+    <div class="disclaimer">
+      Rates shown are illustrative starting points and may vary by business type, volume, and card mix. Card-network interchange and assessments are set by Visa, Mastercard, and other networks, not by Zend.blue. Calculator results are estimates based on published flat rates and typical wholesale card mixes; actual savings depend on your specific transaction profile and are confirmed through a statement review. The Zend Automation Suite's "$250/mo market value" reflects comparable agency-managed CRM and automation service pricing; "effectively $0" means suite costs are offset by documented processing savings, subject to qualifying volume. Zend.blue is a registered ISO/agent of [Sponsor Bank Name], [City, State]. All merchant accounts are subject to underwriting approval.
+      <br><br>© 2026 Zend.blue. All rights reserved.
+    </div>
+  </div>
+</footer>
 
-  <!-- Calculator Script -->
+<!-- Calculator Script -->
   <script src="app.js"></script>
 
   <!-- n8n Chat Widget Script -->
@@ -698,5 +765,55 @@
       })
       .catch(err => console.error('Error loading chatbot configuration:', err));
   </script>
+
+<script>
+(function(){
+  var volEl = document.getElementById('vol');
+  var procEl = document.getElementById('proc');
+  var rateEl = document.getElementById('rate');
+  var btn = document.getElementById('calcBtn');
+  var outC = document.getElementById('outCurrent');
+  var outW = document.getElementById('outWholesale');
+  var outS = document.getElementById('outSavings');
+  var fund = document.getElementById('outFund');
+
+  // Published-default blended effective rates (approx, incl. per-txn fees on avg tickets)
+  var DEFAULTS = { square: 2.9, stripe: 3.2, other: 2.9 };
+  var WHOLESALE = 1.75; // estimated blended wholesale effective rate
+
+  function money(n){
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+  function parseVol(s){
+    return parseFloat(String(s).replace(/[^0-9.]/g,'')) || 0;
+  }
+
+  function calc(){
+    var vol = parseVol(volEl.value);
+    if(!vol){ volEl.focus(); volEl.style.borderColor = '#D98A1F'; return; }
+    volEl.style.borderColor = '';
+    var r = parseFloat(rateEl.value);
+    if(!r || r <= 0){ r = DEFAULTS[procEl.value]; }
+    var current = vol * r / 100;
+    var wholesale = vol * WHOLESALE / 100;
+    var savings = Math.max(0, current - wholesale);
+    outC.textContent = money(current) + '/mo';
+    outW.textContent = money(wholesale) + '/mo';
+    outS.textContent = money(savings) + '/mo';
+    if(savings >= 250){ fund.classList.add('show'); } else { fund.classList.remove('show'); }
+  }
+
+  btn.addEventListener('click', calc);
+  [volEl, rateEl].forEach(function(el){
+    el.addEventListener('keydown', function(e){ if(e.key === 'Enter') calc(); });
+  });
+
+  // format volume input with commas as they type
+  volEl.addEventListener('blur', function(){
+    var v = parseVol(volEl.value);
+    if(v) volEl.value = '$' + v.toLocaleString('en-US');
+  });
+})();
+</script>
 </body>
 </html>
