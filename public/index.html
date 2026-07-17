@@ -316,45 +316,6 @@
     </div>
   </section>
 
-<!-- CALCULATOR -->
-<section class="calc-sec" id="calculator">
-  <div class="wrap">
-    <div class="kicker">Step 1 · Calculate</div>
-    <h2 class="sec-title">What are you actually paying?</h2>
-    <p class="sec-lede">Square and Stripe post one flat number and call it simple. It's not — it's a markup. Enter your average monthly volume and we'll show you your blended effective rate and what wholesale would cost instead.</p>
-
-    <div class="calc-grid">
-      <div class="calc-card">
-        <div class="field">
-          <label for="vol">Monthly card volume <span class="hint">total $ you run through cards</span></label>
-          <input type="text" id="vol" inputmode="numeric" placeholder="$25,000">
-        </div>
-        <div class="field">
-          <label for="proc">Current processor</label>
-          <select id="proc">
-            <option value="square">Square</option>
-            <option value="stripe">Stripe</option>
-            <option value="other">Other / not sure</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="rate">Current rate % <span class="hint">optional — leave blank and we'll use published defaults</span></label>
-          <input type="text" id="rate" inputmode="decimal" placeholder="e.g. 2.9">
-        </div>
-        <button class="btn btn-primary calc-btn" id="calcBtn">Show My Numbers</button>
-      </div>
-
-      <div class="result" id="resultBox" aria-live="polite">
-        <h3>Your ballpark, in dollars</h3>
-        <div class="res-row"><span class="lbl">You're paying approximately</span><span class="val mono" id="outCurrent">—</span></div>
-        <div class="res-row"><span class="lbl">On wholesale, that's closer to</span><span class="val mono" id="outWholesale">—</span></div>
-        <div class="res-row save"><span class="lbl">Estimated savings</span><span class="val mono" id="outSavings">—</span></div>
-        <div class="res-fund" id="outFund">That's enough to fund the <strong>full Zend Automation Suite</strong> ($250/mo market value) — with money left in your pocket.</div>
-        <p class="res-note">Estimates based on published flat rates and typical wholesale card mix. Your exact number depends on card mix, volume, and business type — a free statement review pins it down precisely.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- GOOD / BAD CARDS -->
 <section class="cards-sec" id="cards">
